@@ -98,11 +98,17 @@ h1 {
     font-size: 4rem;
     font-weight: bold;
     color: var(--soft-white);
+    text-align: center;
 }
 
 h2 {
     color: var(--midnight-blue);
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--soft-white);
+    font-size: 1.5rem
 }
 
 /*NAV STYLES*/
@@ -110,11 +116,13 @@ nav ul {
     display: flex;
     flex-direction: row;
     background-color: var(--champagne-gold);
+    list-style: none;
+    padding: 1%;
 }
 
 nav ul li {
     padding: 2vw;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 nav ul li a {
@@ -125,6 +133,30 @@ nav ul li a {
 /*P STYLES*/
 header p {
     color: var(--soft-white);
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    color: var(--dark-charcoal);
+}
+
+h3 ~ p {
+    color:  var(--soft-white);
+}
+
+/*UL STYLES*/
+ul {
+    color: var(--soft-white);
+    list-style-type: disc;
+    padding-left: 4vw;
+}
+/*CLASS STYLES*/
+.green-container {
+    background-color: var(--olive-green);
+    border-radius: 15px;
+    padding: 2.5vw;
+    margin: 3vw 5vw;
 }
 /* MEDIA QUERY (medium) */
 
