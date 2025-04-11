@@ -55,7 +55,7 @@ table {
 
 /* ROOT VARIABLES */
 :root {
-    --font-family: 'Playfair-Display', 'Times New Roman', serif;
+    --font-family: 'Playfair Display', 'Times New Roman', serif;
     --midnight-blue: #1F2A44;
     --olive-green: #76885B;
     --champagne-gold: #E5C185;
@@ -84,10 +84,20 @@ body {
     line-height: 1.5;
 }
 
+/*HEADER, MAIN, FOOTER STYLES*/
+header, footer {
+    background-color: var(--midnight-blue);
+}
+
+main {
+    background-color: var(--linen);
+}
+
 /*HEADING STYLES*/
 h1 {
     font-size: 4rem;
     font-weight: bold;
+    color: var(--soft-white);
 }
 
 h2 {
@@ -96,9 +106,25 @@ h2 {
 }
 
 /*NAV STYLES*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--champagne-gold);
+}
+
 nav ul li {
+    padding: 2vw;
+    font-size: 2rem;
+    font-weight: 600;
+}
+nav ul li a {
     text-decoration: none;
     color: var(--midnight-blue);
+}
+
+/*P STYLES*/
+header p {
+    color: var(--soft-white);
 }
 /* MEDIA QUERY (medium) */
 
