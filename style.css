@@ -152,6 +152,8 @@ h3 ~ p {
 figcaption {
     font-style: italic;
     text-align: center;
+    padding: 1vw;
+    margin-bottom: 1vw;
 }
 
 /*UL STYLES*/
@@ -176,19 +178,12 @@ hr {
     margin: 3vw 5vw;
 }
 
-.group {
-    padding: 5vw;
-}
-
-.image-and-caption-top {
-    border-radius: 1rem 1rem 0rem 0rem;
-}
-
-.image-and-caption-bottom {
-    border-radius: 0rem 0rem 1rem 1rem;
-}
-
-.image-and-caption figcaption {
+.image-and-caption {
+    display: inline-block;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 3px 8px 3px grey;
+    margin: 2rem;
+    overflow: hidden;
     background-color: var(--soft-white);
 }
 
