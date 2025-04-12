@@ -104,6 +104,7 @@ h1 {
 h2 {
     color: var(--midnight-blue);
     font-size: 2rem;
+    padding: 0vw 5vw 1vw 5vw;
 }
 
 h3 {
@@ -135,14 +136,17 @@ header p {
     color: var(--soft-white);
     font-style: italic;
     text-align: center;
+    padding-bottom: 5vw;
 }
 
 p {
     color: var(--dark-charcoal);
+    padding: 0 5vw 0 5vw;
 }
 
 h3 ~ p {
     color:  var(--soft-white);
+    padding: 0;
 }
 
 /*UL STYLES*/
@@ -151,6 +155,14 @@ ul {
     list-style-type: disc;
     padding-left: 4vw;
 }
+
+/*HR STYLES*/
+hr {
+    border: none;
+    border-top: 0.5vw solid var(--champagne-gold);
+    margin: 5vw auto;
+    width: 90%;
+}
 /*CLASS STYLES*/
 .green-container {
     background-color: var(--olive-green);
@@ -158,6 +170,13 @@ ul {
     padding: 2.5vw;
     margin: 3vw 5vw;
 }
+
+/*ID STYLES*/
+#first-h2 {
+    padding-top: 10vw;
+    padding-bottom: 0.25vw;
+}
+
 /* MEDIA QUERY (medium) */
 
 /* MEDIA QUERY (large) */
