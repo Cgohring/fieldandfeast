@@ -86,6 +86,8 @@ body {
     grid-template-columns: auto;
     justify-content: center;
     align-items: center;
+    width: 95%;
+    margin: 0 auto;
 }
 
 /*HEADER, MAIN, FOOTER STYLES*/
@@ -195,8 +197,8 @@ div ~ a {
     text-decoration: none;
     background-color: var(--olive-green);
     font-weight: 600;
-    padding: 2vw 26vw 2vw 26vw;
-    margin: -1vw 3vw 0vw 5vw;
+    padding: 1.5vw 26vw 1.5vw 26vw;
+    margin: -3vw 5.5vw 0vw 5.5vw;
     border-radius: 8px;
     display: inline-block;
     text-align: center;
@@ -247,6 +249,11 @@ div > a {
     justify-content: center;
     align-items: center;
     padding: 0vw 2.5vw 3vw 2.5vw;
+}
+
+#gallery-anchor {
+    display: flex;
+    justify-content: center;
 }
 
 /* MEDIA QUERY (medium) */
