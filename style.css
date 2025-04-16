@@ -86,8 +86,6 @@ body {
     grid-template-columns: auto;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    margin: 0 auto;
 }
 
 /*HEADER, MAIN, FOOTER STYLES*/
@@ -108,7 +106,7 @@ main {
 
 /*HEADING STYLES*/
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--soft-white);
     text-align: center;
@@ -116,7 +114,7 @@ h1 {
 
 h2 {
     color: var(--midnight-blue);
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding: 0vw 5vw 1vw 5vw;
 }
 
@@ -136,7 +134,7 @@ nav ul {
 
 nav ul li {
     padding: 2vw 4vw;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 nav ul li a {
@@ -154,7 +152,7 @@ header p {
 
 p {
     color: var(--dark-charcoal);
-    padding: 0 5vw 0 5vw;
+    padding: 0 5vw 3vw 5vw;
 }
 
 h3 ~ p {
@@ -197,12 +195,14 @@ div ~ a {
     text-decoration: none;
     background-color: var(--olive-green);
     font-weight: 600;
-    padding: 1.5vw 26vw 1.5vw 26vw;
-    margin: -3vw 5.5vw 0vw 5.5vw;
     border-radius: 8px;
     display: inline-block;
     text-align: center;
     font-size: 1.25rem;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    width: 90%;
+    margin: 0 auto;
 }
 
 address > a {
@@ -228,7 +228,6 @@ div > a {
     display: inline-block;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0px 4px 8px 1px rgb(175, 169, 169);
-    margin: 2rem;
     overflow: hidden;
     background-color: var(--soft-white);
 }
@@ -254,10 +253,39 @@ div > a {
 #gallery-anchor {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
+}
+
+#images {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#images img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* MEDIA QUERY (medium) */
-
+/*@media screen and (min-width: 600px) {
+    #div ~ img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+}
+*/
 /* MEDIA QUERY (large) */
+/*@media screen and (min-width: 900px) {
 
+}
+*/
 /* MEDIA QUERY (xl) */
+/*@media screen and (min-width: 1200px) {
+    
+}
+*/
