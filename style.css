@@ -305,6 +305,40 @@ div > a {
         margin: 0 0;
     }
 
+    #images {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 1rem;
+        row-gap: 2rem;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-areas:
+        "tomatoes olive-oil"
+        "table-setting chef-plating"
+        "basket";
+        background-color: red;
+    }
+
+    #tomatoes {
+        grid-area: tomatoes;
+    }
+
+    #olive-oil {
+        grid-area: olive-oil;
+    }
+
+    #table-setting {
+        grid-area: table-setting;
+    }
+
+    #chef-plating {
+        grid-area: chef-plating;
+    }
+
+    #basket {
+        grid-area: basket;
+    }
 }
 
 /* MEDIA QUERY (large) */
