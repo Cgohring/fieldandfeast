@@ -271,14 +271,42 @@ div > a {
 }
 
 /* MEDIA QUERY (medium) */
-/*@media screen and (min-width: 600px) {
-    #div ~ img {
-    width: 100%;
-    height: auto;
-    display: block;
+@media screen and (min-width: 600px) {
+   .offerings-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 3rem auto auto;
+    gap: 1rem;
+    margin: 3vw 5vw;
+    grid-template-areas: 
+        "our-offerings our-offerings"
+        "artisan exclusive"
+        "monthly-basket monthly-basket";
+    } 
+
+    #our-offerings-title {
+        grid-area: our-offerings;
+        padding-left: 0vw;
     }
+
+    #artisan-provisions {
+        grid-area: artisan;
+    }
+
+    #exclusive-dining-experience {
+        grid-area: exclusive;
+    }
+
+    #the-field-and-feast-monthly-basket {
+        grid-area: monthly-basket;
+    }
+
+    .green-container {
+        margin: 0 0;
+    }
+
 }
-*/
+
 /* MEDIA QUERY (large) */
 /*@media screen and (min-width: 900px) {
 
