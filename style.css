@@ -310,14 +310,13 @@ div > a {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
         gap: 1rem;
-        row-gap: 2rem;
+        row-gap: 1rem;
         width: 90%;
         margin: 0 auto;
         grid-template-areas:
         "tomatoes olive-oil"
         "table-setting chef-plating"
-        "basket";
-        background-color: red;
+        "basket .";
     }
 
     #tomatoes {
