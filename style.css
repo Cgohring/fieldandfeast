@@ -115,12 +115,14 @@ h1 {
 h2 {
     color: var(--midnight-blue);
     font-size: 1.75rem;
-    padding: 0vw 5vw 1vw 5vw;
+    padding: 0vw 5vw 0vw 5vw;
+    font-weight: 600;
 }
 
 h3 {
     color: var(--soft-white);
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 /*NAV STYLES*/
@@ -154,6 +156,7 @@ header p {
 p {
     color: var(--dark-charcoal);
     padding: 0 5vw 3vw 5vw;
+    font-weight: 400;
 }
 
 h3 ~ p {
@@ -236,6 +239,10 @@ div > a {
 .email {
     color: var(--champagne-gold);
     font-weight: 600;
+}
+
+.break-word {
+    display: inline;
 }
 
 /*ID STYLES*/
@@ -339,6 +346,17 @@ div > a {
     #basket {
         grid-area: basket;
     }
+
+    #gallery-anchor {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .break-word {
+        display: block;
+    }
 }
 
 /* MEDIA QUERY (large) */
@@ -355,6 +373,10 @@ div > a {
         "tomatoes olive-oil table-setting"
         "chef-plating basket .";
     }
+
+    .break-word {
+        display: block;
+    }
 }
 
 /* MEDIA QUERY (xl) */
@@ -368,5 +390,9 @@ div > a {
         margin: 0 auto;
         grid-template-areas:
         "tomatoes olive-oil table-setting chef-plating basket";
+    }
+
+    .break-word {
+        display: inline;
     }
 }
