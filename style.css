@@ -241,14 +241,6 @@ div > a {
     font-weight: 600;
 }
 
-#break-word-one {
-    display: inline;
-}
-
-#break-word-two {
-    display: inline;
-}
-
 /*ID STYLES*/
 #first-h2 {
     padding-top: 10vw;
@@ -283,8 +275,17 @@ div > a {
     display: block;
 }
 
+#break-word-one {
+    display: inline;
+}
+
+#break-word-two {
+    display: inline;
+}
+
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 600px) {
+    /*CLASS STYLES*/
    .offerings-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -297,6 +298,11 @@ div > a {
         "monthly-basket monthly-basket";
     } 
 
+    .green-container {
+        margin: 0 0;
+    }
+
+    /*ID STYLES*/
     #our-offerings-title {
         grid-area: our-offerings;
         padding-left: 0vw;
@@ -312,10 +318,6 @@ div > a {
 
     #the-field-and-feast-monthly-basket {
         grid-area: monthly-basket;
-    }
-
-    .green-container {
-        margin: 0 0;
     }
 
     #images {
@@ -339,16 +341,7 @@ div > a {
 
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 900px) {
-    #images {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        gap: 2rem;
-        row-gap: 2rem;
-        width: 90%;
-        margin: 2vw auto 2vw auto;
-    }
-
+    /*CLASS STYLES*/
     .offerings-container {
         display: grid;
         grid-template-columns: auto auto;
@@ -361,6 +354,17 @@ div > a {
             "monthly-basket monthly-basket";
         } 
 
+    /*ID STYLES*/
+    #images {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        row-gap: 2rem;
+        width: 90%;
+        margin: 2vw auto 2vw auto;
+    }
+
     #first-h2 {
         padding-top: 5vw;
         padding-bottom: 0vw;
@@ -370,6 +374,7 @@ div > a {
         display: inline;
     }
 
+    /*HR STYLES*/
     hr {
         border: none;
         border-top: 0.5vw solid var(--champagne-gold);
@@ -377,6 +382,7 @@ div > a {
         width: 90%;
     }
 
+    /*MAIN STYLES*/
     main {
         background-color: var(--linen);
         padding-bottom: 2.5vw;
@@ -385,13 +391,19 @@ div > a {
 
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px) {
+    /*CLASS STYLES*/
+    .offerings-container {
+        margin: 0vw 4vw 3vw 4vw;
+    }
+
+    /*ID STYLES*/
     #images {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
-        gap: 1rem;
-        row-gap: 1rem;
+        gap: 2rem;
+        row-gap: 0rem;
         width: 90%;
-        margin: 3vw auto 0 auto;
+        margin: 1vw auto 1vw auto;
     }
 
     #first-h2 {
@@ -403,9 +415,24 @@ div > a {
         display: inline;
     }
 
+    /*MAIN STYLES*/
     main {
         background-color: var(--linen);
-        padding: 0 10vw 2.5vw 10vw;
+        padding: 0 10vw 1.5vw 10vw;
     }
-    
+
+    /*HEADER STYLES*/
+    h2 {
+        padding: 0vw 4vw 0vw 4vw;
+    }
+
+    /*P STYLES*/
+    p {
+        padding: 0 4vw;
+    }
+
+    /*HR STYLES*/
+    hr {
+        margin: 3vw auto 2vw auto;
+    }
 }
