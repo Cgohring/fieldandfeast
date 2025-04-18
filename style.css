@@ -155,7 +155,7 @@ header p {
 
 p {
     color: var(--dark-charcoal);
-    padding: 0 5vw 3vw 5vw;
+    padding: 0 5vw;
     font-weight: 400;
 }
 
@@ -241,7 +241,11 @@ div > a {
     font-weight: 600;
 }
 
-.break-word {
+#break-word-one {
+    display: inline;
+}
+
+#break-word-two {
     display: inline;
 }
 
@@ -262,6 +266,7 @@ div > a {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    margin-bottom: -0.5rem;
 }
 
 #images {
@@ -269,7 +274,7 @@ div > a {
     row-gap: 1rem;
     grid-template-columns: auto;
     width: 90%;
-    margin: 0 auto;
+    margin: 5vw auto 0 auto;
 }
 
 #images img {
@@ -320,41 +325,14 @@ div > a {
         gap: 1rem;
         row-gap: 1rem;
         width: 90%;
-        margin: 0 auto;
-        grid-template-areas:
-        "tomatoes olive-oil"
-        "table-setting chef-plating"
-        "basket .";
+        margin: 3vw auto 0 auto;
     }
 
-    #tomatoes {
-        grid-area: tomatoes;
+    #break-word-one {
+        display: block;
     }
 
-    #olive-oil {
-        grid-area: olive-oil;
-    }
-
-    #table-setting {
-        grid-area: table-setting;
-    }
-
-    #chef-plating {
-        grid-area: chef-plating;
-    }
-
-    #basket {
-        grid-area: basket;
-    }
-
-    #gallery-anchor {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .break-word {
+    #break-word-two {
         display: block;
     }
 }
@@ -365,17 +343,43 @@ div > a {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
-        gap: 1rem;
-        row-gap: 1rem;
+        gap: 2rem;
+        row-gap: 2rem;
         width: 90%;
-        margin: 0 auto;
-        grid-template-areas:
-        "tomatoes olive-oil table-setting"
-        "chef-plating basket .";
+        margin: 2vw auto 2vw auto;
     }
 
-    .break-word {
-        display: block;
+    .offerings-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 3rem auto auto;
+        gap: 1rem;
+        margin: 0vw 5vw 3vw 5vw;
+        grid-template-areas: 
+            "our-offerings our-offerings"
+            "artisan exclusive"
+            "monthly-basket monthly-basket";
+        } 
+
+    #first-h2 {
+        padding-top: 5vw;
+        padding-bottom: 0vw;
+    }
+
+    #break-word-one {
+        display: inline;
+    }
+
+    hr {
+        border: none;
+        border-top: 0.5vw solid var(--champagne-gold);
+        margin: 5vw auto 2.5vw auto;
+        width: 90%;
+    }
+
+    main {
+        background-color: var(--linen);
+        padding-bottom: 2.5vw;
     }
 }
 
@@ -387,12 +391,21 @@ div > a {
         gap: 1rem;
         row-gap: 1rem;
         width: 90%;
-        margin: 0 auto;
-        grid-template-areas:
-        "tomatoes olive-oil table-setting chef-plating basket";
+        margin: 3vw auto 0 auto;
     }
 
-    .break-word {
+    #first-h2 {
+        padding-top: 5vw;
+        padding-bottom: 0vw;
+    }
+
+    #break-word-two {
         display: inline;
     }
+
+    main {
+        background-color: var(--linen);
+        padding: 0 10vw 2.5vw 10vw;
+    }
+    
 }
