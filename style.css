@@ -129,11 +129,12 @@ nav ul {
     flex-direction: row;
     background-color: var(--champagne-gold);
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
+    padding-left: 0vw;
 }
 
 nav ul li {
-    padding: 2vw 4vw;
+    padding: 2vw 0vw;
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -341,12 +342,31 @@ div > a {
 }
 
 /* MEDIA QUERY (large) */
-/*@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
+    #images {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+        row-gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-areas:
+        "tomatoes olive-oil table-setting"
+        "chef-plating basket .";
+    }
+}
 
-}
-*/
 /* MEDIA QUERY (xl) */
-/*@media screen and (min-width: 1200px) {
-    
+@media screen and (min-width: 1200px) {
+    #images {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 1rem;
+        row-gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-areas:
+        "tomatoes olive-oil table-setting chef-plating basket";
+    }
 }
-*/
